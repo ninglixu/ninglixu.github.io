@@ -65,12 +65,51 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Publications</h2>
                 <p>
-                  Most my works are related to: <strong>computer vision, machine learning, generative AI, NeRF, diffusion</strong>. Some works are <span style="background-color:#ffffd0;">highlighted.</span>
+                  Most my works are related to: <strong>Computer vision, Machine learning, Generative AI, NeRF, Diffusion</strong>. Some works are <span style="background-color:#ffffd0;">highlighted.</span>
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr onmouseout="ma_stop()" onmouseover="ma_start()" bgcolor="#ffffd0">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='motionaverage'><video  width=100% muted autoplay loop>
+                    <source src="images/ground_view.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/ground_view.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function ma_start() {
+                    document.getElementById('motionaverage').style.opacity = "1";
+                  }
+  
+                  function ma_stop() {
+                    document.getElementById('motionaverage').style.opacity = "0";
+                  }
+                  ma_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://gdaosu.github.io/geocontext/">
+                  <span class="papertitle">Geospecific View Generation -- Geometry-Context Aware High-resolution Ground View Inference from Satellite Views</span>
+                </a>
+                <br><strong>Ningli Xu</strong>, <a href="https://u.osu.edu/qin.324/">Rongjun Qin</a>
+                <br>
+                <em> ECCV</em>, 2024 
+                <br>
+                <a href="https://isprs-annals.copernicus.org/articles/X-1-2024/275/2024/">paper</a>
+                |
+                <a href="https://huggingface.co/datasets/GDAlab/GeoContext-v1">dataset</a>
+                |
+                <a href="https://gdaosu.github.io/geocontext/">project page</a>
+                <p>
+                A diffusion-based method to perform ground-view synthesis conditioning on the weak building facades information from satellite images.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="ma_stop()" onmouseover="ma_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -225,9 +264,11 @@
               <h2>Academic Services</h2>
               <p><strong>Reviewer:</strong></p>
               <ul>
-                <li>BMVC 2024</li>
+                <li>Neural Information Processing Systems (NeurPIS) 2024</li>
+                <li>British Machine Vision Conference (BMVC) 2024</li>
                 <li>ISPRS Journal of Photogrammetry and Remote Sensing</li>
                 <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
+                <li>IEEE Transactions on Image Processing (TIP)</li>
                 <li>Journal of Spatial Science</li>
               </ul>
             </td>
