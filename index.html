@@ -71,6 +71,44 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="ma_stop()" onmouseover="ma_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='motionaverage'><video  width=100% muted autoplay loop>
+                    <source src="images/skyeyes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/skyeyes.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function ma_start() {
+                    document.getElementById('motionaverage').style.opacity = "1";
+                  }
+  
+                  function ma_stop() {
+                    document.getElementById('motionaverage').style.opacity = "0";
+                  }
+                  ma_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://gdaosu.github.io/geocontext/">
+                  <span class="papertitle">Skyeyes: Ground Roaming using Aerial View Images</span>
+                </a>
+                <br><a href="https://scholar.google.com/citations?hl=en&user=9_Nmg4kAAAAJ&view_op=list_works&sortby=pubdate">Zhiyuan Gao*</a>, <a href="https://scholar.google.com/citations?user=HKXO9CEAAAAJ&hl=en">Wenbin Teng*</a>, <a href="https://xtcpete.com/">Gonglin Chen</a>,  <a href="https://jinsenwu.com/">Jinsen Wu</a>, <strong>Ningli Xu</strong>, <a href="https://u.osu.edu/qin.324/">Rongjun Qin</a>, <a href="https://scholar.google.com/citations?user=JKWxGfsAAAAJ&hl=en">Andrew Feng</a>, <a href="https://scholar.google.com/citations?hl=en&user=AdiIxrcAAAAJ&view_op=list_works&sortby=pubdate">Yajie Zhao</a> 
+                <br>
+                <em> arxiv</em>
+                <br>
+                <a href="https://arxiv.org/abs/2409.16685">arxiv</a>
+                |
+                <a href="https://chaoren2357.github.io/website-skyeyes/">project page</a>
+                <p>
+                  SkyEyes is a framework that transforms aerial imagery into realistic street view sequences using 3D Gaussian Splatting, diffusion models, and a constrained optimization strategy to enhance cross-view synthesis quality.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="ma_stop()" onmouseover="ma_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -105,7 +143,7 @@
                 |
                 <a href="https://gdaosu.github.io/geocontext/">project page</a>
                 <p>
-                A diffusion-based method to perform ground-view synthesis conditioning on the weak building facades information from satellite images.
+                The first work applying diffusion-based method to tackle satellite-to-ground view generation task. It performs ground-view synthesis conditioning on the weak building facades information from satellite images.
                 </p>
               </td>
             </tr>
@@ -251,6 +289,49 @@
               </td>
             </tr>
           </tbody></table>
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Softwares</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+            <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+
+                  <img src='images/change.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function smerf_start() {
+                    document.getElementById('smerf_image').style.opacity = "1";
+                  }
+
+                  function smerf_stop() {
+                    document.getElementById('smerf_image').style.opacity = "0";
+                  }
+                  smerf_stop()
+                </script>
+              </td>
+
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.tandfonline.com/doi/full/10.1080/17538947.2021.1966527">
+                  <span class="papertitle">A volumetric change detection framework using UAV oblique photogrammetry – a case study of ultra-high-resolution monitoring of progressive building collapse</span>
+                </a>
+                <br><strong>Ningli Xu</strong>, <a href="https://debaohuang.github.io/">Debao Huang</a>, <a href="https://www.linkedin.com/in/shuang-song-osu/">Shuang Song</a>, Xiao Ling, Chris Strasbaugh, <a href="https://u.osu.edu/pcvlab/">Alper Yilmaz</a>, <a href="https://ceg.osu.edu/people/sezen.1">Halil Sezen</a>, <a href="https://u.osu.edu/qin.324/">Rongjun Qin</a>
+                <br>
+                <em>International Journal of Digital Earth </em>, 2021
+                <br>
+                <a href="https://arxiv.org/abs/2108.02800">paper</a> |
+                <a href="https://www.youtube.com/watch?v=uLaLV6Q5El0&ab_channel=OSU_GDA">video</a>
+                <p></p>
+                <p>
+                Monitoring of progressive building collapse using photogrammetry technique.
+                </p>
+              </td>
+            </tr>
+        </tbody></table> -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -260,6 +341,7 @@
               </ul>
             </td>
           </tr>
+        </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -268,6 +350,7 @@
               <ul>
                 <li>Neural Information Processing Systems (NeurPIS) 2024</li>
                 <li>British Machine Vision Conference (BMVC) 2024</li>
+                <li>Asian Conference on Computer Vision (ACCV) 2024</li>
                 <li>ISPRS Journal of Photogrammetry and Remote Sensing</li>
                 <li>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</li>
                 <li>IEEE Transactions on Image Processing (TIP)</li>
