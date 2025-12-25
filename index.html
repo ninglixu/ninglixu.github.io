@@ -779,6 +779,16 @@
             "./imgs/IMG_0885.JPG",
             "./imgs/IMG_0888.JPG",
             "./imgs/IMG_0899.JPG",
+            "./imgs/IMG_0916.JPG",
+            "./imgs/IMG_1343.JPG",
+            "./imgs/IMG_1381.JPG",
+            "./imgs/IMG_2148.JPG",
+            "./imgs/IMG_2400.JPG",
+            "./imgs/IMG_2401.JPG",
+            "./imgs/IMG_2558.JPG",
+            "./imgs/IMG_2738.JPG",
+            "./imgs/IMG_3276.JPG",
+            "./imgs/IMG_3433.JPG",
         ];
 
         async function loadHardcodedImages() {
@@ -799,7 +809,7 @@
                         img.onload = () => { 
                             addPhotoMesh(img); 
                             loadedCount++;
-                            updateStatus(`已加载 ${loadedCount} 张照片`, "#fff");
+                            updateStatus(`${loadedCount}`, "#fff");
                         }
                     }
                     reader.readAsDataURL(blob);
